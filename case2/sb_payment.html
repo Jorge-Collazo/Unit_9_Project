@@ -7,8 +7,8 @@
       Case Problem 2
 
       Spice Bowl Payment Form
-      Author: 
-      Date:   
+      Author: Jorge Collazo
+      Date:   12-5-19
 
       Filename:   sb_payment.html
 
@@ -19,11 +19,18 @@
    <title>Spice Bowl Payment Form</title>
    <link href="sb_reset.css" rel="stylesheet" />
    <link href="sb_styles.css" rel="stylesheet" />
+   <link href="sb_forms.css" rel="stylesheet" />
+   <link href="sb_validate.css" rel="stylesheet" />
+   <script src="sb_script.js"></script>
 </head>
 
 <body>
    <header>
       <img src="sb_logo.png" alt="The Spice Bowl" />
+      <form id="login" action="http://www.example.com/sb/login" method="post">
+         <input id="userBox" name="username" type="text" placeholder="username">
+         <input id="pwdBox" name="password" type="text" placeholder="password">
+      </form>
 
       <nav> <a id="navicon" href="#"><img src="sb_navicon.png" alt="" /></a>
          <ul>
@@ -38,6 +45,29 @@
    
    <section>
       <h1>Payment Form</h1>
+      <form id="payment" action="http://www.example.com/sb/payment" method="post">
+         <fieldset id="biling">
+            <legend>Biling Information (required)</legend>
+            <label for="fName">First Name</label>
+            <input name="" id="" type="" required />
+            <label for=""></label>
+            <input name="" id="" type="" required />
+            <label for=""></label>
+            <input name="" id="" type="" required />
+            <label for=""></label>
+            <input name="" id="" type="" />
+            <label for=""></label>
+            <input name="" id="" type="" required />
+            <label for=""></label>
+            <input name="" id="" type="" required />
+            <label for=""></label>
+            <input name="" id="" type="" />
+            <label for=""></label>
+            <input name="" id="" type="" required />
+            <label for=""></label>
+            <input name="" id="" type="" required />
+         </fieldset>
+      </form>
       
       <aside>
          <h1>Menu Ideas</h1>
